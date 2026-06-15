@@ -1,0 +1,201 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Paquetes de Idioma y Codificación ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel} % Configura español y traduce "Cuadro" por "Tabla"
+\usepackage[margin=2.5cm]{geometry} % Márgenes académicos estándar
+
+% --- Paquetes de Diseño y Color ---
+\usepackage{xcolor} % Requerido para la coloración de fuentes y títulos
+\usepackage{titlesec} % Control de formato de títulos
+\usepackage{booktabs} % Líneas de tabla profesionales (toprule, midrule, bottomrule)
+\usepackage{tabularx} % Tablas con ajuste automático de ancho de columna
+\usepackage{amsmath,amssymb} % Entorno matemático para hipótesis y fracciones limpias
+\usepackage{graphicx} % Inserción de recursos gráficos (Logo de la empresa)
+\usepackage{enumitem} % Control fino de viñetas y listas
+\usepackage{hyperref} % Enlaces y marcadores interactivos
+
+% --- Configuración Estética de Secciones ---
+\definecolor{azulProfundo}{HTML}{0A2540}
+\definecolor{cianTecnologico}{HTML}{00D4B2}
+
+\titleformat{\section}{\large\bfseries\color{azulProfundo}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{azulProfundo!80!black}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\small\bfseries\color{cianTecnologico!70!black}}{\thesubsubsection}{1em}{}
+
+% --- Configuración de Portada ---
+\title{
+    \vspace{-1cm}
+    \IfFileExists{logo_sync_ai.png}{
+        \includegraphics[width=0.35\textwidth]{logo_sync_ai.png} \\ [0.5cm]
+    }{
+        \textrm{\textbf{\color{azulProfundo}\Large [ Isotipo Sync.AI ]}} \\ [0.5cm]
+    }
+    \textbf{\huge Sync.AI} \\ [0.4cm]
+    \Large Proyecto de Integración Cognitiva: \\ Soluciones Avanzadas de IA para Best Day Travel Group \\ [0.6cm]
+    \large\textit{Propuesta Comercial Técnica de Licitación}
+}
+\author{
+    \textbf{Asignatura:} MODAM -- Investigación en Inteligencia Artificial \\
+    \textbf{Maestría:} Inteligencia Artificial \\
+    \textbf{Institución:} Universidad Internacional de La Rioja (UNIR)
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% --- BLOQUE DE DISCLAIMER ACADÉMICO ---
+\vspace{0.5cm}
+\begin{center}
+    \small
+    \color{black!80}
+    \begin{tabular}{|p{14cm}|}
+        \hline
+        \rowcolor{black!5}
+        \textbf{Descargo de Responsabilidad (Disclaimer) y Fines Académicos:} \\
+        El presente documento constituye una propuesta comercial de carácter estrictamente ficticio, desarrollada de forma exclusiva con fines educativos, de investigación y evaluación dentro de la asignatura \textit{Investigación en Inteligencia Artificial}. Los nombres de las corporaciones, marcas comerciales, datos financieros simulados y escenarios de negocio aquí citados son empleados con el único propósito de ilustrar el ejercicio práctico de la materia. \\
+        \hline
+    \end{tabular}
+\end{center}
+\vspace{0.5cm}
+
+\tableofcontents
+\newpage
+
+% --- SECCIÓN 1 ---
+\section{Identidad Corporativa y Fundamentos de Sync.AI}
+\subsection{Nombre de la Empresa}
+Sync.AI
+
+\subsection{Eslogan}
+"Conectando tu oferta con el mercado global a través de precisión artificial."
+
+\subsection{Misión}
+"Empoderar a las empresas del sector turístico transformando el caos de los datos masivos en inteligencia competitiva accionable, mediante el uso de Inteligencia Artificial."
+
+\subsection{Visiones Temporales}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Corto Plazo (0-6 meses): Despliegue y Sincronización Exacta.} Implementar el Sistema Inteligente de Homologación y Análisis Competitivo de Inventario Hotelero (SIHAC) en producción para erradicar errores de nomenclatura en el inventario.
+    \item \textbf{Mediano Plazo (6-18 meses): Descubrimiento de Oportunidades.} Lograr la conversión integral del sistema en el núcleo operativo de \textit{Business Intelligence} corporativo.
+    \item \textbf{Largo Plazo (18+ meses): Computación Cognitiva Autónoma.} Evolucionar la arquitectura algorítmica para predecir de manera proactiva el comportamiento tarifario de todo el ecosistema turístico (vuelos, tours, paquetes).
+\end{itemize}
+
+% --- SECCIÓN 2 ---
+\section{Definición del Problema e Hipótesis}
+\subsection{Problema}
+El área de Revenue Management de Best Day Travel Group sufre pérdidas de oportunidad comercial debido a la disparidad de nombres de hoteles en plataformas competidoras (ej. Despegar, Booking, Expedia), lo que hace fallar a los sistemas de extracción tradicionales (RPA) basados en reglas de texto estrictas.
+
+\subsection{Solución con IA}
+Implementación de un pipeline de Machine Learning que combina Procesamiento de Lenguaje Natural (PLN) y agrupamiento (\textit{Clustering}) multidimensional, considerando simultáneamente de manera analítica: nombre vectorizado, calificación, servicios, ubicación espacial y precio.
+
+\subsection{Hipótesis}
+La combinación de Procesamiento de Lenguaje Natural (PLN) y algoritmos de clustering multidimensional incrementará la identificación automática y homologación exacta en al menos un $35\%$ en comparación con los métodos actuales de coincidencia exacta.
+
+\newpage
+
+% --- SECCIÓN 3 ---
+\section{Matriz de Objetivos, Metas e Indicadores}
+\textbf{Objetivo General:} Desarrollar y desplegar un sistema basado en IA que identifique, homologue y analice el inventario hotelero de los principales competidores contra el de Best Day, para crear nuevas estrategias de rentabilidad.
+
+\begin{table}[htbp]
+\centering
+\caption{Matriz de Control Empresarial: Objetivos, Metas e Indicadores.}
+\vspace{0.2cm}
+\begin{tabularx}{\textwidth}{p{4.2cm} p{4.2cm} X}
+\toprule
+\textbf{Objetivo Específico} & \textbf{Meta} & \textbf{Indicador de Éxito} \\
+\midrule
+\textbf{OE1:} Automatizar la recolección de datos masivos de los competidores (Expedia, Despegar, Booking, Price Travel). & Recolectar el $100\%$ de la oferta hotelera disponible de los 4 competidores en destinos clave, con periodicidad diaria. & \textbf{Tasa de éxito de extracción diaria:} \newline $\displaystyle\frac{\text{Volumen de hoteles extraídos}}{\text{Volumen total estimado del destino}}$ \\ \addlinespace
+\textbf{OE2:} Homologar el catálogo de la competencia con el inventario propio superando la discordancia de nombres. & Lograr un emparejamiento (\textit{matching}) automático del $95\%$ del inventario recolectado sin intervención humana. & \textbf{Métricas de ML:} \newline Precisión (\textit{Precision}), Exhaustividad (\textit{Recall}) del modelo y \% de falsos positivos en homologación auditado por humanos. \\ \addlinespace
+\textbf{OE3:} Generar inteligencia competitiva para Revenue Management y Contratación. & Identificar mensualmente al menos un $10\%$ de hoteles de alta rentabilidad ofertados por la competencia que no figuran en Best Day. & \textbf{Nuevas oportunidades:} \newline Número de nuevos hoteles identificados como oportunidad de negocio; Crecimiento mensual del inventario propio. \\
+\bottomrule
+\end{tabularx}
+\label{tab:matriz_objetivos}
+\end{table}
+
+% --- SECCIÓN 4 ---
+\section{Soporte Documental y Estado del Arte}
+\subsection{Soluciones Previas (Competencia)}
+Plataformas como Booking.com emplean algoritmos internos basados en Árboles de Decisión y regresiones para predecir precios, mientras que Price Travel utiliza RPA estándar para la extracción de tarifas. Comercialmente existen productos alternos como \textit{OTA-Match-Basic} que intentan alinear catálogos basándose puramente en expresiones regulares clásicas, logrando emparejamientos deficientes ante variaciones del lenguaje.
+
+\subsection{Estado del Arte (Nuestra Diferenciación)}
+La investigación científica en IA demuestra que los modelos de aprendizaje no supervisado y algoritmos basados en semántica distribucional superan a las métricas textuales lexicográficas tradicionales. Cruzar características heterogéneas numéricamente mediante $K\text{-Means} / K\text{-NN} $ con análisis semántico reduce a cero el falso negro por "cambio de nombre comercial" (Russell \& Norvig, 2004; Marsland, 2015).
+
+\subsection{Actualización Tecnológica (Últimos 5 años)}
+Para robustecer la propuesta frente a la licitación, el estado del arte de Sync.AI incorpora arquitecturas avanzadas basadas en \textit{Transformers} y modelos de lenguaje ajustados mediante aprendizaje profundo (\textit{Sentence-BERT / SBERT}). Estos avances permiten mapear las cadenas de texto a un espacio vectorial continuo donde la similitud del coseno captura el contexto real del negocio turístico (identificando descriptores como "Spa", "All Inclusive" o "Resort" de forma matemática y relacional), superando las limitaciones semánticas intrínsecas de los algoritmos basados en texto plano.
+
+\newpage
+
+% --- SECCIÓN 5 ---
+\section{Diseño Experimental y Pipeline Tecnológico}
+\subsection{Diseño del Experimento}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Muestra Controlada:} Dataset balanceado de 50,000 registros extraídos de Best Day y Expedia en Cancún y la Riviera Maya.
+    \item \textbf{Validación:} Se aplicará la metodología de Validación Cruzada (\textit{Cross Validation}) utilizando una distribución del 75\% para entrenamiento y el 25\% para validación. Se comparará directamente el Grupo de Control (scripts clásicos de extracción) contra el Grupo Experimental (Modelo Sync.AI Multidimensional).
+    \item \textbf{Criterio de Éxito:} La hipótesis de investigación se dará por validada si el Grupo Experimental mejora la precisión analítica en un $+35\%$ frente al entorno de control.
+\end{itemize}
+
+\subsection{Pipeline Tecnológico (CRISP-DM)}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Etapa 1: Recolección:} Ingesta paralela de HTML/APIs de competidores. \textit{Output:} JSON en crudo en el Data Lake (ej. \texttt{\{"origen": "Expedia", "nombre": "GR Solaris Cancun \& Spa All Inclusive", "precio": "\$4,040"\}}).
+    \item \textbf{Etapa 2: Preparación:} Limpieza, filtrado y tipado de datos estructurados. \textit{Output:} Datos normalizados matemáticamente (ej. \texttt{\{"nombre": "gr solaris cancun spa all inclusive", "precio": 4040.0, "lat\_lon": [21.072, -86.774]\}}).
+    \item \textbf{Etapa 3: Procesamiento PLN:} Uso estratégico de Word2Vec / SBERT para transformar cadenas de texto limpio en embeddings vectoriales multidimensionales que capturan el contexto semántico de las marcas.
+    \item \textbf{Etapa 4: Modelado de Distancia:} Ejecución de algoritmos $K\text{-Means} / K\text{-NN}$ combinando simultáneamente el vector latente de texto, distancia física euclidiana, variaciones de precio y calificación de la OTA. \textit{Output:} Puntuación de similitud (Umbral de distancia $< 0.15 \rightarrow \text{Match = TRUE}$).
+    \item \textbf{Etapa 5: Evaluación y Despliegue:} Ingestión de resultados validados en base de datos productiva y envío de alertas automáticas al Dashboard de Revenue (ej. \textit{"Disparidad detectada: GR Solaris Cancún se vende 8\% más caro en Expedia. Inventario homologado."}).
+\end{enumerate}
+
+% --- SECCIÓN 6 ---
+\section{Cronograma de Actividades (Diagrama de Gantt Estructurado)}
+Se ha diseñado el plan de trabajo alineado al cumplimiento estricto de los objetivos en un horizonte cerrado de 16 semanas:
+
+\begin{table}[htbp]
+\centering
+\caption{Cronograma Técnico de Actividades del Proyecto SIHAC.}
+\vspace{0.2cm}
+\begin{tabularx}{\textwidth}{l c X l}
+\toprule
+\textbf{Etapa del Proyecto} & \textbf{Semanas} & \textbf{Actividades Clave a Ejecutar} & \textbf{Objetivo Relacionado} \\
+\midrule
+\textbf{Fase 1:} Ingesta & 1 - 4 & Configuración de Web Scrapers y consumo de APIs con conexión diaria automatizada hacia el Data Lake. & OE1 (Automatización) \\ \addlinespace
+\textbf{Fase 2:} Preparación & 5 - 7 & Normalización de precios, limpieza profunda de strings y estructuración de coordenadas espaciales. & OE2 (Homologación) \\ \addlinespace
+\textbf{Fase 3:} Modelado IA & 8 - 11 & Entrenamiento de vectores de palabras Word2Vec/SBERT y calibración de umbrales en $K\text{-Means} / K\text{-NN}$. & OE2 (Homologación) \\ \addlinespace
+\textbf{Fase 4:} Evaluación & 12 - 13 & Ejecución del diseño experimental con la muestra de 50k registros y cálculo formal de Precision y Recall. & Hipótesis (+35\% eficacia) \\ \addlinespace
+\textbf{Fase 5:} Despliegue & 14 - 16 & Integración de las alertas inteligentes de disparidad tarifaria en el Dashboard final de Revenue Management. & OE3 (Inteligencia) \\
+\bottomrule
+\end{tabularx}
+\label{tab:cronograma_gantt}
+\end{table}
+
+\newpage
+
+% --- SECCIÓN 7 ---
+\section{Entregables y Presupuesto Económico}
+\subsection{Componentes de Costo Financiero (Esquema Realista Simulado)}
+Para dotar a la propuesta del enfoque empresarial requerido por la licitación, se establece la siguiente distribución presupuestaria:
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Ingeniería y Desarrollo de IA (3 Consultores Senior):} \$45,000 USD
+    \item \textbf{Infraestructura Cloud (Data Lake, almacenamiento y cómputo especializado GPU):} \$12,000 USD
+    \item \textbf{Arquitectura de Software e Integración de Dashboard (UI/UX):} \$18,000 USD
+    \item \textbf{Soporte Técnico Post-Despliegue y Fase de Garantía (3 meses):} \$5,000 USD
+    \item \textbf{Costo Total de Inversión Tecnológica:} \textbf{\$80,000 USD}
+\end{itemize}
+
+\subsection{Entregables Técnicos Oficiales}
+\begin{enumerate}[leftmargin=*]
+    \item Código fuente documentado del Pipeline de Extracción y Homologación automatizado bajo repositorios corporativos privados.
+    \item Base de datos productiva optimizada con el histórico completo de mapeo y catálogo unificado de competidores.
+    \item Dashboard Analítico Interactivo de Disparidad e Inteligencia Competitiva para el equipo de Revenue Management.
+    \item Documentación técnica de arquitectura del sistema, manuales operativos de usuario y métricas de reproducibilidad del modelo de Machine Learning.
+\end{enumerate}
+
+% --- SECCIÓN 8 ---
+\section{Conclusiones y Trabajo Futuro}
+\subsection{Conclusiones}
+La implementación de SIHAC mitiga de forma definitiva el fallo sistémico característico de los esquemas tradicionales de coincidencia exacta basados en texto plano dentro del sector turístico. Al procesar de forma semántica y multidimensional la oferta activa de la competencia, Best Day adquiere una ventaja competitiva inmediata en el mercado regional, permitiendo al equipo de Revenue reaccionar en tiempo real ante las variaciones de precios de las OTAs y capitalizar de inmediato ventanas de oportunidad en la contratación de hoteles no catalogados.
+
+\subsection{Trabajo Futuro}
+Una vez estabilizada la base limpia de datos de inventario hotelero, el sistema evolucionará en una fase subsecuente hacia el despliegue de la arquitectura de computación cognitiva autónoma descrita en la visión a largo plazo. Esto implicará escalar el pipeline de machine learning integrando modelos de aprendizaje profundo predictivo para estimar dinámicamente las tendencias, estacionalidades y comportamientos de tarifas cruzadas en el ecosistema global de vuelos, paquetes combinados y tours integrados.
+
+\end{document}
