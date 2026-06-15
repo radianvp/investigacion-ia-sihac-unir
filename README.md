@@ -54,3 +54,17 @@ El procesamiento de datos de inventario competitivo e ingeniería de caracterís
 ├── main.tex               # Código fuente oficial de la propuesta comercial para Overleaf
 ├── requirements.txt       # Dependencias y librerías del entorno virtual
 └── README.md              # Presentación del proyecto
+```
+
+---
+
+## 📄 Propuesta Comercial en LaTeX
+
+Para garantizar una colaboración académica eficiente y permitir la edición o compilación directa en plataformas como **Overleaf**, se ha estructurado el código fuente del reporte técnico de licitación en un archivo independiente situado en la raíz de este proyecto.
+
+Puedes acceder, revisar o copiar el código de configuración completo ingresando directamente a través del siguiente enlace:
+👉 **[main.tex](./main.tex)**
+
+> 💡 **Nota de Configuración Técnica:** El archivo de origen cuenta con la declaración explícita del paquete `xcolor` para mitigar por completo cualquier fallo de renderizado cromático en los encabezados, así como directivas dinámicas basadas en entornos `tabularx` y `booktabs` que resuelven los desbordamientos de texto en las matrices de objetivos corporativos exigidas por la UNIR.
+
+---
