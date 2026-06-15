@@ -38,6 +38,8 @@ El procesamiento de datos de inventario competitivo e ingeniería de caracterís
 
 ---
 
+---
+
 ## 📁 Estructura General del Repositorio
 
 ```text
@@ -49,5 +51,6 @@ El procesamiento de datos de inventario competitivo e ingeniería de caracterís
 │   └── clustering/        # Algoritmos K-Means/K-NN y cálculo de umbrales
 ├── notebooks/             # Jupyter Notebooks de experimentación y validación cruzada
 ├── docs/                  # Documentación técnica, manual de usuario y propuesta comercial
+├── main.tex               # Código fuente oficial de la propuesta comercial para Overleaf
 ├── requirements.txt       # Dependencias y librerías del entorno virtual
-└── README.md              # Presentación del proyecto# investigacion-ia-sihac-unir
+└── README.md              # Presentación del proyecto
